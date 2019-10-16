@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import Login from './Pages/Login';
 import { Route, Link, BrowserRouter as Router, Switch, Redirect} from "react-router-dom";
 import Admin from './Pages/Adimin';
+import lancamentos from './Pages/Lancamentos';
 const routing = (
 
     <Router>
@@ -13,7 +14,8 @@ const routing = (
             <Switch>
                 <Route exact path='/' component={App} />
                 <Route exact path='/login' component={Login} />
-                <Route exact path="/Admin" component={Admin}/>             
+                <Route exact path="/Admin" component={Admin}/>
+                <Route exact path="/Lancamentos" component={lancamentos}/>             
                 
             </Switch>
         </div>

@@ -13,11 +13,7 @@ function Nav(){
           <Link to="/" href="#destaques_div">destaques</Link>
         </li>
       </ul>
-      <ul>
-        <li>
-          <Link to="/" href="#sessao_favoritos">favoritos</Link>
-        </li>
-      </ul>
+
       <ul>
         <li>
           <Link to="/">filmes</Link>
