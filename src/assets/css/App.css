@@ -36,6 +36,9 @@ h3{
   display: flex;
   flex-direction: row;
 }
+#deslogarButton{
+  color: black;
+}
 a{
   font-family: "Bebas Neue";
   color:whitesmoke;
@@ -72,6 +75,12 @@ ul{
 ul:hover{
   background-color: #830f00;
    
+}
+tr{
+  list-style-type: none;
+  padding: 2px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .div_barrinha{
@@ -112,6 +121,24 @@ width: 100%;
   background-image: url(../img/placeholder-images);
   background-position: center;
 
+}
+.deslogarButton{
+  color: black;
+}
+.sessao_lancamentos{
+  padding: 100px;
+}
+.classefilmes{
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+.button_form{
+  font-size: 2em;
+  font-family: "Bebas Neue";
+   border: none;
+  height: 100px;
+  width: 200px;
 }
 button{
   font-size: 2em;

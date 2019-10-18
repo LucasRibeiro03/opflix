@@ -3,7 +3,7 @@ import '../assets/css/App.css';
 import Navegador from '../../src/Component/nav'
 import Rodape from '../../src/Component/footer'
 
-class App extends Component {
+class lancamento extends Component {
 
     constructor() {
         super();
@@ -27,23 +27,27 @@ class App extends Component {
             <div>
                 <Navegador />
 
-                <section className="sessao_favoritos">
+                <section className="sessao_lancamentos">
 
 
                     {this.state.lista.map((element) => {
                         let vai = "/lancamentos/id/"
                         return (
-                            <div className="">
+                            <div className="classefilmes">
 
                                 <div className="filme_box">
 
                                     <img className="imagemFilme" src={element.imagem} />
 
-                                    {/* <Route path="/Lancamentos/idLancamento" component={idLancamento} /> */}
-
+                                    
                                 </div>
                                 <div className="InfoFilme">
+                                    <h2>{element.nomeLancamento}</h2>
 
+                                    <h4>{element.sinopse}</h4>
+                                    <h4>{element.tipo}</h4>
+                                    <h4>{element.duracao}</h4>
+                                    <h4>{element.lancamento}</h4>
                                 </div>
                             </div>
 
@@ -59,4 +63,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default lancamento;
