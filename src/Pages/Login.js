@@ -59,7 +59,7 @@ class login extends Component{
                         <input className="input_form" placeholder="Email" onChange={this.mudarEstadoEmail} value={this.state.email}/>
                         <input className="input_form" placeholder="Senha" onChange={this.mudarEstadoSenha} value={this.state.senha}/>
                         <button className="button_form" >Logar</button>
-                    
+                        
                         <p 
                                 className="text__login"
                                 style={{color: "red", textAlign:"center"}}

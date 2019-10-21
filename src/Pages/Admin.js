@@ -3,14 +3,14 @@ import '../assets/css/App.css';
 import NavegadorAdmin from '../Component/navAdmin'
 import Rodape from '../Component/footer'
 import Divsessao from '../Component/divsessao';
-import { throwStatement } from '@babel/types';
 
 export default class Admin extends Component{
 
     constructor(){
         super();
         this.state ={
-            lista :[]
+            lista :[],
+            nome:""
         }
     }
     componentDidMount(){
@@ -25,6 +25,9 @@ export default class Admin extends Component{
     deslogar = () => {
         localStorage.removeItem("chaveOpflix");
     }
+    cadastrarNome = (event) => {
+        this.setState({nome : event.target.value})
+    };
     cadastrarCategoria = (event) =>{
         event.preventDefault();
 
@@ -33,7 +36,7 @@ export default class Admin extends Component{
             //method
             method:"POST",
             //body
-            body: JSON.stringify({nome:this.state.nome}),
+            body: JSON.stringify({NomeCategoria: this.state.nome}),
             //headers
             headers:{
                 "Content-Type" : "application/json"
@@ -78,9 +81,14 @@ export default class Admin extends Component{
                     <div>
                         <Divsessao titulo="Adicionar categoria" />
                         <form className="form_login" id="form_categoria" onSubmit={this.cadastrarCategoria} >
+
+
+                            
                             <input className="input_form" type="text"  value={this.state.nome}
-                            onChange={this.nomeCategoria} placeholder="cadastrar" />
-                            <button className="button_form" > cadastrar</button>
+                            onChange={this.cadastrarNome} placeholder="cadastrar" />
+
+
+                            <button className="button_form" onClick={this.cadastrarCategoria}> cadastrar</button>
 
 
                     
