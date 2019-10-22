@@ -15,7 +15,7 @@ function NavAdmin(){
       </ul>
       <ul>
         <li>
-          <Link to="/Lancamento">Alterar Lancamento</Link>
+          <Link to="/AdminLancamento">Alterar Lancamento</Link>
         </li>
       </ul>
       <ul>

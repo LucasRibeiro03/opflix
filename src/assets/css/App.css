@@ -80,8 +80,16 @@ tr{
   list-style-type: none;
   padding: 2px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20%;
+  margin-left: 20%;
+
 }
+table{
+  margin: 0 auto;
+}
+
 
 .div_barrinha{
 background-color: rgb(224, 224, 224);
@@ -180,7 +188,6 @@ button{
   width: 200px;
   margin: 5px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   border: none;
 }
@@ -191,6 +198,8 @@ button{
 .th{
   background-color: #afaf;
 }
+
+
 #h2footer{
   font-family: "Bebas Neue";
   color:whitesmoke;

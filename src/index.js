@@ -8,6 +8,7 @@ import { Route, Link, BrowserRouter as Router, Switch, Redirect } from "react-ro
 import Admin from './Pages/Admin';
 import NaoEncontrado from './Pages/NaoEncontrado'
 import lancamento from './Pages/Lancamentos';
+import lancamentoAdm from './Pages/LancamentoAdmin';
 
 const RotaPrivada = ({ component: Component }) => (
 
@@ -37,6 +38,7 @@ const routing = (
                 <Route path='/login' component={Login} />
                 <RotaPrivada path="/admin" component={Admin} />
                 <Route path="/Lancamentos" component={lancamento} />
+                <RotaPrivada path="/AdminLancamento" component={lancamentoAdm}/>
                 <Route component={NaoEncontrado}/>
             </Switch>
         </div>
