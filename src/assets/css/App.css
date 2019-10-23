@@ -198,7 +198,16 @@ button{
 .th{
   background-color: #afaf;
 }
-
+.form_cadastrar{
+margin: 40px auto;
+height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #830f00;
+}
 
 #h2footer{
   font-family: "Bebas Neue";
